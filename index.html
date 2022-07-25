@@ -45,7 +45,7 @@
                             </div>
                             <div class="my-thumbnails position-relative">
 
-                                <div v-for="(image, indice) in images" :class="(ImmagineSelez==indice)? 'active':'' " class="my-thumbnail">
+                                <div v-for="(image, indice) in images" :class="(ImmagineSelez==indice)? 'active':'' " class="my-thumbnail"@click="setImage(indice)">
                                     <img class="img-fluid" v-bind:src="image.url" v-bind:alt="'Thumbnail of' + image.title + 'picture'">
                                 </div>
                             

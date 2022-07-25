@@ -52,7 +52,9 @@ const ContainerVue = new Vue (
             },
 
 
-            /*scrivere funzione per metter immagine al click */
+            setImage(indice){
+                this.ImmagineSelez=indice;
+            }
         }
     }
 );
